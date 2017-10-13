@@ -1,0 +1,34 @@
+{
+  "name": "kickpush-landingpage",
+  "version": "0.1.0",
+  "description": "A clone version of KICKPUSH's landingpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "start": "gulp browser-sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lvnam96/KICKPUSH-landingpage.git"
+  },
+  "author": "lvnam96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lvnam96/KICKPUSH-landingpage/issues"
+  },
+  "homepage": "https://github.com/lvnam96/KICKPUSH-landingpage#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
