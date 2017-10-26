@@ -1,0 +1,30 @@
+@import '../variables';
+
+.heading {
+    text-align: center;
+    font-weight: 900;
+}
+
+.sub-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9em;
+    color: $darker-color;
+}
+
+.desc-heading {
+    
+}
+
+.heading.type1 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+}
+
+.heading.type2 {
+    font-size: 1.5em;
+}
+
+.heading.type3 {
+
+}

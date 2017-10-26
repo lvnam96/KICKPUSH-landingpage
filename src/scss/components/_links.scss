@@ -1,0 +1,9 @@
+@import '../variables';
+
+.link {
+    transition: color .2s;
+}
+
+.link:hover {
+    color: $secondary-color;
+}
