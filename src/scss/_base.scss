@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 'Roboto','Helvetica Neue',Helvetica,Tahoma,sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1rem;
+    line-height: inherit;
+    color: #fff;
+}
+
+// clearfix hack
+.cf::before,
+.cf::after {
+    content: ' ';
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+// Udacity: Responsive web design
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+nav a,
+button {// at least 40px
+    min-width: 48px;
+    min-height: 48px;
+}
+
+// Modules will scale with document
+article,
+section,
+nav,
+aside,
+header,
+footer {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+// Type will scale with modules
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5,
+h6 {
+    font-size: .875em;
+}
+
+h6 {
+    font-style: italic;
+}
+
+p {// remember to set the paragraph-column's width to 28-33em
+    font-size: 1em;// default font size
+    line-height: 1.5;
+    margin-top: 1.125em;// paragraph spacing
+    margin-bottom: 1.125em;
+}
+
+li,
+q,
+blockquote {
+    font-size: 1em;
+}
+
+abbr {// use it for uppercase acronym: CSS, JS,...
+    letter-spacing: -.05em;
+}
+
+blockquote {
+    margin: 2em;
+    cite {
+        display: block;
+        text-align: right;
+    }
+}
+
+// http://htmldog.com/references/html/tags/sub/
+// https://i.stack.imgur.com/Ousrm.gif
+sup, sub {
+    font-size: .5em;
+}
+
+sup {
+    vertical-align: super;
+
+    &.math {
+        vertical-align: .8em;
+    }
+}
+
+sub {
+    vertical-align: sub;
+}
+
+// change browser's default settings
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+p a:link {
+    border-bottom: 1px dashed currentColor;
+}
+
+p a:hover,
+p a:active {
+    border-bottom-style: solid;
+}
+
+.delText {// replace <s> by <span class="delText">
+    text-decoration: line-through;
+}
