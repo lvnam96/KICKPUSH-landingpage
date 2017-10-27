@@ -4,6 +4,12 @@ body {
     background-color: $primary-color;
 }
 
+.body-wrapper {
+    padding: .5em 1em;
+    scroll-behavior: smooth;// Firefox 49+, Experimental Feature in Chrome 41+
+    -webkit-overflow-scrolling: touch;// lazy scrolling in webkit
+}
+
 .section {
 
 }
