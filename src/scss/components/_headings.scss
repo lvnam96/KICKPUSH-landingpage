@@ -1,30 +1,65 @@
 @import '../variables';
 
 .heading {
-    text-align: center;
     font-weight: 900;
+
+    &.type1 {
+        font-size: 2.5em;
+        line-height: 1.2em;
+        padding: 0 1em;
+    }
+
+    &.type2 {
+        font-size: 1.5em;
+    }
+
+    &.type3 {
+
+    }
+}
+
+.heading-group {
+    margin: 2.3em auto;
+
+    &__big {
+        margin: 8em auto;
+    }
+
+    &__mid {
+        margin: 5em auto;
+    }
+
+    &__small {
+        margin: 3em auto;
+    }
 }
 
 .sub-heading {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     font-size: .9em;
     color: $darker-color;
+    margin-bottom: 0;
+
+    .fullpage-nav-wrapper & {
+        font-weight: 700;
+    }
 }
 
 .desc-heading {
-    
+    font-weight: 700;
+    font-size: .8em;
 }
 
-.heading.type1 {
-    font-size: 2.5em;
-    line-height: 1.2em;
+.footer-medal,
+.heading,
+.heading-group,
+.desc-heading {
+    text-align: center;
 }
 
-.heading.type2 {
-    font-size: 1.5em;
-}
-
-.heading.type3 {
-
+@media (min-width: 40rem) {
+    .heading.type1 {
+        padding: 0;
+    }
 }

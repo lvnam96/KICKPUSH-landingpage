@@ -130,15 +130,6 @@ a {
     color: currentColor;
 }
 
-p a:link {
-    border-bottom: 1px dashed currentColor;
-}
-
-p a:hover,
-p a:active {
-    border-bottom-style: solid;
-}
-
 .delText {// replace <s> by <span class="delText">
     text-decoration: line-through;
 }
