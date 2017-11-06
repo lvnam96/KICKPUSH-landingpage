@@ -1,9 +1,21 @@
 .btn {
-    
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1.3rem 3.3rem;
+    background-color: #212121;
+    border-radius: .3rem;
+    font-weight: 700;
+    font-size: .85rem;
+
+    &:hover {
+        background-color: #333;
+    }
 }
 
 .btn--primary {
 
 }
 
-.btn--secondary
+.btn--secondary {
+
+}

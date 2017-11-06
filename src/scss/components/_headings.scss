@@ -2,64 +2,214 @@
 
 .heading {
     font-weight: 900;
+    margin: .7em auto;
+    line-height: 1.2;
 
-    &.type1 {
-        font-size: 2.5em;
-        line-height: 1.2em;
-        padding: 0 1em;
+    &.center {
+        text-align: center;
     }
 
-    &.type2 {
+    &--xl {
+        font-size: 2.4em;
+        line-height: 1.1;
+        width: 75%;
+        margin-bottom: 0;
+
+        &.headline {
+
+        }
+    }
+
+    &--l {
+        font-size: 2em;
+    }
+
+    &--m {
         font-size: 1.5em;
+        line-height: 1.15;
+        // minwidth
     }
 
-    &.type3 {
+    &--s {
+        font-size: 1.3em;
+    }
 
+    &--xs {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: .8em;
+        color: $darker-color;
+        margin-bottom: .5em;
+
+        .fullpage-nav-wrapper & {
+            font-weight: 700;
+        }
+    }
+
+    &--desc {
+        font-weight: 700;
+        font-size: .85em;
+        width: 75%;
+    }
+
+    &--special {
+        font-size: 2.4em;
+        color: #466edd;
+        margin: 2em 0;
     }
 }
 
 .heading-group {
-    margin: 2.3em auto;
+    margin: 2.3rem auto;
+    font-size: 1rem;
 
     &__big {
-        margin: 8em auto;
+        margin: 8rem auto;
     }
 
     &__mid {
-        margin: 5em auto;
+        margin: 5rem auto;
     }
 
     &__small {
-        margin: 3em auto;
+        margin: 3rem auto;
+    }
+
+    &.center {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-.sub-heading {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: .9em;
-    color: $darker-color;
-    margin-bottom: 0;
+// .sub-heading {
+//     text-transform: uppercase;
+//     font-weight: 500;
+//     font-size: .9rem;
+//     color: $darker-color;
+//     margin-bottom: 0;
 
-    .fullpage-nav-wrapper & {
-        font-weight: 700;
-    }
-}
+//     .fullpage-nav-wrapper & {
+//         font-weight: 700;
+//     }
+// }
 
-.desc-heading {
-    font-weight: 700;
-    font-size: .8em;
-}
-
-.footer-medal,
-.heading,
 .heading-group,
 .desc-heading {
     text-align: center;
 }
 
-@media (min-width: 40rem) {
-    .heading.type1 {
-        padding: 0;
+@media (min-width: 32rem) {//text-align: left;
+    .heading {
+
+        &--xl {
+            font-size: 2.7em;
+            line-height: 1.1;
+        }
+
+        &--l {
+            font-size: 2.3em;
+        }
+
+        &--m {
+            font-size: 1.8em;
+            line-height: 1.15;
+        }
+
+        &--s {
+            font-size: 1.4em;
+        }
+
+        &--xs {
+            // font-size: .8rem;
+
+            .fullpage-nav-wrapper & {
+                font-weight: 700;
+            }
+        }
+
+        &--desc {
+            font-weight: 700;
+            font-size: .85em;
+            width: 75%;
+        }
+
+        &--special {
+            font-size: 4em;
+        }
+    }
+
+    .heading-group {
+        margin: 2.3rem auto;
+
+        &__big {
+            margin: 11rem auto;
+        }
+
+        &__mid {
+            margin: 5rem auto;
+        }
+
+        &__small {
+            margin: 3rem auto;
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .heading {
+        text-align: left;
+        width: 100%;
+    }
+
+    .heading-group {
+        .contact-section & {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 64rem) {
+    .heading {
+
+        &.center {
+            text-align: center;
+        }
+
+        &--xl {
+            font-size: 5em;
+            line-height: 1.1;
+            margin-left: 0;
+        }
+
+        &--l {
+            font-size: 2.3em;
+        }
+
+        &--m {
+            font-size: 1.8em;
+            line-height: 1.15;
+        }
+
+        &--s {
+            font-size: 1.4em;
+        }
+
+        &--xs {
+            // font-size: .8rem;
+
+            .fullpage-nav-wrapper & {
+                font-weight: 700;
+            }
+        }
+
+        &--desc {
+            font-weight: 700;
+            font-size: .85em;
+        }
+
+        &--special {
+            font-size: 5em;
+            max-width: 8em;
+        }
     }
 }

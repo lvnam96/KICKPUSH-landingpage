@@ -75,6 +75,10 @@ $height--burger-btn__dash: 3px;
         opacity: 1;
         visibility: visible;
     }
+
+    > a:hover {
+        opacity: .7;
+    }
 }
 
 .fullpage-nav__item {
@@ -84,10 +88,6 @@ $height--burger-btn__dash: 3px;
     margin: .4em 0;
     transition: opacity .2s;
     will-change: opacity;
-
-    &:hover {
-        opacity: .7;
-    }
 }
 
 .fullpage-nav__email {
@@ -161,10 +161,6 @@ $height--burger-btn__dash: 3px;
             left: cacl(8px / 3);
         }
     }
-}
-
-#fullpage-nav-toggler:checked ~ .body-wrapper {
-    display: none;
 }
 
 @media (min-width: 32rem) {

@@ -5,21 +5,41 @@ body {
 }
 
 .body-wrapper {
-    padding: .5em 1em;
+    padding: .5rem 0;
     scroll-behavior: smooth;// Firefox 49+, Experimental Feature in Chrome 41+
     -webkit-overflow-scrolling: touch;// lazy scrolling in webkit
+
+    #fullpage-nav-toggler:checked ~ & {
+        display: none;
+    }
 }
 
 .section {
+    // text-align: center;
+}
 
+.meet-our-people-section {
+    display: block;
+    background: url('../imgs/home-team.jpg') no-repeat 50% 10%;
+    background-size: 130% auto;
+    padding: 10rem 0;
+    width: 100%;
+    text-align: center;
+    will-change: background-size;
+    transition: .2s ease-out;
+
+    &:hover {
+        background-size: 110% auto;
+    }
 }
 
 .section1 {
-    
+    // padding-top: rem;
+    // min-height:
 }
 
 .section2 {
-    
+
 }
 
 .section3 {
@@ -28,4 +48,18 @@ body {
 
 .hidden {
     display: none;
+}
+
+@media (min-width: 32rem) {
+    .section {
+        text-align: left;
+    }
+
+    .section.section1 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 64rem) {
+
 }

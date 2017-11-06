@@ -1,8 +1,29 @@
-.footer__social-icons-list {
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+
+    &__copyright {
+        text-align: center;
+        font-weight: 700;
+        font-size: .85em;
+        flex-basis: 100%;
+    }
+
+    &__social-icons-list {
+        list-style-type: none;
+    }
+
+    &__social-icons-list,
+    &__email {
+        display: none;
+    }
+}
+
+.social-icons-list {
     text-align: center;
     padding-left: 0;
     list-style-type: none;
-    margin: 2em auto;
+    margin: 2rem auto;
 }
 
 .social-item {
@@ -11,13 +32,28 @@
 }
 
 .social-link {
-    padding: .4em;
+    padding: .4rem;
 }
 
 .social-icon {
 
 }
 
+.footer-medal {
+    text-align: center;
+}
+
 svg, path {
     fill: inherit;
+}
+
+@media (min-width: 32rem) {
+
+}
+
+@media (min-width: 48rem) {
+    .footer__social-icons-list,
+    .footer-medal {
+        text-align: left;
+    }
 }
