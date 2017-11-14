@@ -1,0 +1,29 @@
+.flow__img-container {
+	overflow-x: hidden
+}
+
+.flow__img {
+	background: center no-repeat;
+	background-size: contain;
+	height: auto; width: 100%;
+	// position: absolute;
+	// left: 0; top: 0;
+
+	&--1 {
+		// background-image: url('../imgs/flow-1.png');
+		max-width: 1042px;
+		transform: translate(30%, 0);
+	}
+
+	&--2 {
+		// background-image: url('../imgs/flow-2.png');
+		max-width: 1348px;
+		transform: translate(-18%, 0);
+	}
+
+	&--3 {
+		// background-image: url('../imgs/flow-3.png');
+		max-width: 1042px;
+		transform: translate(-30%, 0);
+	}
+}

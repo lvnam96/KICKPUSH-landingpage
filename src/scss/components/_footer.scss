@@ -1,16 +1,27 @@
+/*********************\
+# Footer layout
+\*********************/
 .footer {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
 
-    &__copyright {
-        text-align: center;
+    &__copyright,
+    &__email {
         font-weight: 700;
         font-size: .85em;
-        flex-basis: 100%;
+        text-align: center;
+    }
+
+    &__copyright {
+        width: 100%;
     }
 
     &__social-icons-list {
         list-style-type: none;
+        padding: 0;
+        text-align: center;
     }
 
     &__social-icons-list,
@@ -26,6 +37,13 @@
     margin: 2rem auto;
 }
 
+
+
+
+
+/*********************\
+# Tiny things in footer
+\*********************/
 .social-item {
     display: inline-block;
     vertical-align: center;
@@ -48,12 +66,48 @@ svg, path {
 }
 
 @media (min-width: 32rem) {
+    .social-icons-list {
+        display: none;
+    }
 
+    .footer {
+        &__copyright {
+            // text-align: left;
+        }
+
+        &__copyright,
+        &__social-icons-list,
+        &__email {
+            width: 33%;
+        }
+
+        &__social-icons-list,
+        &__email {
+            display: block;
+        }
+
+        &__social-icons-list {
+            flex-grow: 1;
+        }
+
+        &__email {
+            // text-align: right;
+        }
+    }
 }
 
 @media (min-width: 48rem) {
-    .footer__social-icons-list,
     .footer-medal {
         text-align: left;
+    }
+
+    .footer {
+        &__copyright {
+            text-align: left;
+        }
+
+        &__email {
+            text-align: right;
+        }
     }
 }

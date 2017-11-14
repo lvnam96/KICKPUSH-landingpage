@@ -1,0 +1,13 @@
+.award {
+    background: url('../imgs/award-ribbon@2x.png') top left no-repeat,
+        url('../imgs/award-ribbon@2x.png') bottom right no-repeat;
+    background-size: auto 200%;
+    display: inline-table;
+    margin: 0 0 2rem 0;
+    opacity: 0.5;
+
+    .project & + & {
+        margin-left: 1.5rem;
+        margin-right: 0;
+    }
+}

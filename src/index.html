@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KICKASS</title>
+    <title>Kickass</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
@@ -24,7 +24,7 @@
             <a class="link heading heading--s" href="mailto:hello@kickass.co">hello@kickass.co</a>
         </div>
     </aside>
-    <nav class="nav navbar">
+    <nav class="nav navbar navbar--sticky">
         <div class="logo-container">
             <a href="/" rel="nofollow">
                 <img class="logo" src="./imgs/KICKASS-logo.png" alt="LOGO" />
@@ -32,19 +32,13 @@
         </div>
         <div class="nav__items-container">
             <a href="#project" title="See our projects">
-                <div class="nav__item">
-                    Projects
-                </div>
+                <span class="nav__item">Projects</span>
             </a>
             <a href="#project" title="Find out about Kickass">
-                <div class="nav__item">
-                    People
-                </div>
+                <span class="nav__item">People</span>
             </a>
             <a href="#project" title="Say hi">
-                <div class="nav__item">
-                    Contact
-                </div>
+                <span class="nav__item">Contact</span>
             </a>
             <label for="fullpage-nav-toggler" class="fullpage-nav-toggler">
                 <div class="burger-btn">
@@ -58,62 +52,119 @@
     <main class="body-wrapper">
         <section class="section section1">
             <div class="heading-group heading-group__big center">
-                <h1 class="heading heading--xl center">We don’t even like<br/>the internet.</h1>
+                <h1 class="heading heading--xl center">We don’t even<br/>like the internet.</h1>
                 <h3 class="heading heading--desc center">Product design studio from sunny London.</h3>
             </div>
         </section>
         <section class="section section2">
-            <!-- <div class="flexbox">
-                <div class="project-img">
-
+            <div class="project project--laptop">
+                <div class="device device--laptop">
+                    <img src="./imgs/home-device0.png"/>
                 </div>
-            </div> -->
-            <div class="heading-group">
-                <h3 class="heading heading--desc">Our work</h3>
-                <h2 class="heading heading--m">Apps we love making are apps you love using</h2>
-                <a class="btn btn--primary" href="#">View our projects</a>
+                <div class="heading-group">
+                    <h2 class="heading heading--m">Designing apps for people we believe in.</h2>
+                    <a class="btn btn--primary" href="#">View projects</a>
+                </div>
             </div>
         </section>
         <section class="section section3">
             <h1 class="heading heading--special center">No politics<br/>and no drama.</h1>
         </section>
         <section class="section section4">
-            <div class="flexbox">
-                <div class="project-img">
-
+            <div class="project project--portrait-mobile">
+                <div class="device device--portrait-mobile">
+                    <video loop="loop" muted="muted" autoplay="autoplay" poster="./imgs/home-video-poster.png">
+                        <source src="./videos/home.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <div>
+                <!-- <div class="flexbox__content"> -->
                     <div class="heading-group">
+                        <div class="award">
+                            <img src="./imgs/award-the-economist-1.svg"/>
+                        </div>
                         <h3 class="heading heading--desc">The Economist</h3>
                         <h2 class="heading heading--m">This VR thing everyone's been raving about.</h2>
                         <a class="btn btn--primary" href="#">Open projects</a>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </section>
         <section class="section section5">
             <h1 class="heading heading--special center">Straight talk<br/>and good vibes.</h1>
         </section>
         <section class="section section6">
-            <div class="flexbox">
+            <div class="project project--skewed-mobile">
                 <div class="project-img">
-
+                    <img src="./imgs/home-device1.png"/>
                 </div>
                 <div>
                     <div class="heading-group">
+                        <div class="award">
+                            <img src="./imgs/award-mixvibes-1.svg"/>
+                        </div>
+                        <div class="award">
+                            <img src="./imgs/award-mixvibes-2.svg"/>
+                        </div>
                         <h3 class="heading heading--desc">Remixlive</h3>
                         <h2 class="heading heading--m">We’re proud when you get featured.</h2>
-                        <a class="btn btn--primary" href="#">Open projects</a>
+                        <a class="btn btn--primary" href="#">Open project</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section section7">
-
+            <div class="sexy-pane">
+                <div class="sexy-pane__img cf">
+                    <video width="1280" height="688" loop="loop" muted="muted" autoplay="autoplay" poster="./imgs/hero.jpg">
+                        <source src="./videos/hero.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <div class="sexy-pane__content heading-group">
+                    <h2 class="heading heading--l">Here’s one for the brave.</h2>
+                    <h3 class="heading heading--desc">Product design in 10 days. No kidding.</h3>
+                    <p class="sexy-pane__content__desc">We run Express Product Design: a full-on design workflow that makes big moves in a short time. No politics. No drama. Just straight forward communication and getting it done.</p>
+                    <a class="btn btn--secondary">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <section class="section flow">
+            <div class="flow__containers">
+                <div class="flow__img-container">
+                    <img class="flow__img flow__img--1" src="./imgs/flow-1.png"/>
+                </div>
+                <div class="flow__content">
+                    <div class="heading-group">
+                        <h3 class="heading heading--desc">01 UX Design</h3>
+                        <h2 class="heading heading--xl">User journeys<br/>that flow.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flow__containers">
+                <div class="flow__img-container">
+                    <img class="flow__img flow__img--2" src="./imgs/flow-2.png"/>
+                </div>
+                <div class="flow__content">
+                    <div class="heading-group">
+                        <h3 class="heading heading--desc">02 UI Design</h3>
+                        <h2 class="heading heading--xl">Interfaces<br/>that feel right.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flow__containers">
+                <div class="flow__img-container">
+                    <img class="flow__img flow__img--3" src="./imgs/flow-3.png" />
+                </div>
+                <div class="flow__content">
+                    <div class="heading-group">
+                        <h3 class="heading heading--desc">03 Branding</h3>
+                        <h2 class="heading heading--xl">Brands that<br/> make sense.</h2>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="section section8">
             <a class="meet-our-people-section" href="#">
-                <span class="heading heading--m center">Meet our people</span>
+                <span class="heading heading--l center">Meet our people</span>
             </a>
         </section>
         <div class="section contact-section">
@@ -123,7 +174,7 @@
             </div>
             <div class="heading-group">
                 <h2 class="heading heading--xs">New business</h2>
-                <a class="link heading heading--s" href="mailto:hello@kickass.co">lvnam96@kickass.co</a>
+                <a class="link heading heading--s" href="mailto:hello@garyle.me">alex@kickass.co</a>
             </div>
             <div class="heading-group">
                 <h2 class="heading heading--xs">Say hi</h2>
@@ -159,7 +210,7 @@
             </div>
         </div>
         <footer class="section footer">
-            <p class="footer__copyright">© Kickpush ltd. 2017 | <a class="link" href="#">Privacy Policy</a></p>
+            <p class="footer__copyright">© Kickass ltd. 2017 | <a class="link" href="#">Privacy Policy</a></p>
             <ul class="footer__social-icons-list">
                 <li class="social-item">
                     <a class="link social-link" href="#" title="Follow us on Dribbble">
@@ -183,10 +234,45 @@
                     </a>
                 </li>
             </ul>
-            <span class="link footer__email">hello@kickpush.co</span>
+            <p class="footer__email"><a class="link" href="mailto:hello@kickass.co">hello@kickass.co</a></p>
         </footer>
     </main>
-    
+    <script>
+        function stickNavbarWhenScrollTo(scroll_pos) {
+            if (scroll_pos >= 32) {
+                if (firstTime) {
+                    section1.style.marginTop = (parseInt(section1Styles.getPropertyValue('margin-top'), 10) + navbarElem.offsetHeight + navbarElem.offsetTop) + 'px';
+                    firstTime = false;
+                }
+                navbarElem.classList.add('navbar--sticky');
+            } else {
+                firstTime = true;
+                section1.style.marginTop = '176px';
+                navbarElem.classList.remove('navbar--sticky');
+            }
+        }
+        if (document.documentElement.clientWidth > 512) {
+            var last_known_scroll_position = 0,
+                ticking = false,
+                navbarElem = document.getElementsByClassName('navbar')[0],
+                section1 = document.getElementsByClassName('heading-group__big')[0],
+                section1Styles = window.getComputedStyle(section1),
+                firstTime = true;
+
+            navbarElem.classList.remove('navbar--sticky');
+
+            window.addEventListener('scroll', function (e) {
+                last_known_scroll_position = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(function () {
+                        stickNavbarWhenScrollTo(last_known_scroll_position);
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+        }
+    </script>
     <!-- <script src="./js/index.min.js"></script> -->
 </body>
 </html>
