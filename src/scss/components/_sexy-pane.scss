@@ -1,7 +1,7 @@
 @import '../variables';
 .sexy-pane {
 	padding: 2rem;
-	width: 90%;
+	// width: 90%;
 	margin: 10rem auto;
 	position: relative;
 
@@ -63,9 +63,9 @@
 }
 
 @media (min-width: 32rem) {
-	.sexy-pane {
-		width: 93%;
-	}
+	// .sexy-pane {
+	// 	width: 93%;
+	// }
 
 	.sexy-pane__img {
 		width: 40%;
@@ -84,7 +84,7 @@
 }
 
 @media (min-width: 64rem) {
-	.sexy-pane {
-		width: 95%;
-	}
+	// .sexy-pane {
+	// 	width: 95%;
+	// }
 }

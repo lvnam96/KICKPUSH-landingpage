@@ -1,11 +1,11 @@
 .btn {
     display: inline-block;
     margin: 0 auto;
-    padding: 1.3rem 3.3rem;
+    padding: 1.3em 2em;
     transition: background-color .1s ease-out;
-    border-radius: .3rem;
-    font-weight: 700;
-    font-size: .85rem;
+    border-radius: .3em;
+    font-weight: 900;
+    font-size: .85em;
     cursor: pointer;
 }
 
@@ -18,7 +18,7 @@
 
 .btn--secondary {
     background-color: transparent;
-    border: #fff .125rem solid;
+    border: #fff .125em solid;
     color: #fff;
     &:hover {
         background-color: #fff;

@@ -15,10 +15,20 @@ body {
 }
 
 .section {
-    // text-align: center;
+    margin: 0 auto;
+    max-width: 61.5rem;
+    width: calc(100% - 3rem);
+
+    &--1 {
+
+    }
+
+    &--2 {
+
+    }
 }
 
-.meet-our-people-section {
+.meet-our-people-link {
     display: block;
     background: url('../imgs/home-team.jpg') no-repeat 50% 10%;
     background-size: 190%;
@@ -63,6 +73,8 @@ body {
         width: auto;
         margin: 0 auto;
         background: url('../imgs/home-video-poster.png') center no-repeat;
+        background-size: 65%;
+        background-position: center 54%;
 
         video {
             transform: scale(.5);
@@ -83,7 +95,7 @@ body {
         text-align: center;
     }
 
-    .meet-our-people-section {
+    .meet-our-people-link {
         display: block;
         background: url('../imgs/home-team.jpg') no-repeat 50% 10%;
         background-size: 190%;
@@ -126,7 +138,7 @@ body {
 }
 
 @media (min-width: 64rem) {
-    .meet-our-people-section {
+    .meet-our-people-link {
         background-size: 100%;
         padding: 15rem 0;
         // height: 10rem;
