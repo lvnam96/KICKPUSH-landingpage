@@ -33,11 +33,11 @@ gulp.task('css', ['sass'], function (cb) {
         .pipe(gulp.dest(distPath + 'css'));
 });
 
-gulp.task('img', function(cb) {
+gulp.task('imgs', function(cb) {
     var imagemin = require('gulp-imagemin');
     var pngquant = require('imagemin-pngquant');
     // gulp.task('images', ['hugo'], () => {
-    return gulp.src(watchPaths.img)
+    return gulp.src(watchPaths.imgs)
         .pipe(imagemin({
             progressive: true,
             use: [pngquant()]
@@ -66,4 +66,4 @@ gulp.task('browser-sync', function (cb) {
     gulp.watch(watchPaths.html).on('change', bs.reload);
 });
 
-gulp.task('default', ['img', 'css', 'html']);
+gulp.task('default', ['imgs', 'css', 'html']);
